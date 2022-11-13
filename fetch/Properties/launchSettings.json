@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "fetch": {
+      "commandName": "Project",
+      "commandLineArgs": "--metadata http://www.google.com http://autify.com"
+    }
+  }
+}

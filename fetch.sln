@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fetch", "fetch\fetch.csproj", "{B059FE54-47FD-444F-A730-8342B61C177C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B059FE54-47FD-444F-A730-8342B61C177C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B059FE54-47FD-444F-A730-8342B61C177C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B059FE54-47FD-444F-A730-8342B61C177C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B059FE54-47FD-444F-A730-8342B61C177C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42D7EE81-6C43-48FC-AAB6-99DE88CF22DB}
+	EndGlobalSection
+EndGlobal
