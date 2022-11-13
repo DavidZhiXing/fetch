@@ -2,7 +2,7 @@
   "profiles": {
     "fetch": {
       "commandName": "Project",
-      "commandLineArgs": "--metadata http://www.google.com http://autify.com"
+      "commandLineArgs": "--metadata http://www.google.com http://autify.com www.google.com autify.com"
     }
   }
 }

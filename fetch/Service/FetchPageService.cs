@@ -29,7 +29,6 @@ public class FetchPageService
                     if (printMetadata)
                     {
                         Console.WriteLine(metadata.ToString());
-                        //_logger.LogInformation(metadata.ToString());
                     }
 
                     var directory = Environment.CurrentDirectory;
@@ -42,9 +41,9 @@ public class FetchPageService
                 }
 
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
-                _logger.LogError(e.Message);
+                _logger.LogError($"Error fetching {url}: {ex.Message}");
             }
         }
     }

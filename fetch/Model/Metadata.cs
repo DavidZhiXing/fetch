@@ -6,6 +6,6 @@ public class Metadata{
 
         public override string ToString()
         {
-            return $"site: {Site}, {Environment.NewLine}num_links: {NumLinks}, {Environment.NewLine}images: {Images}, {Environment.NewLine}last_fetch: {LastFetch}";
+            return $"site: {Site}, {Environment.NewLine}num_links: {NumLinks}, {Environment.NewLine}images: {Images}, {Environment.NewLine}last_fetch: {LastFetch.ToUniversalTime().ToString("ddd MMM dd yyyy HH:mm")} UTC";
         }
 }
