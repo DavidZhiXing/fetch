@@ -2,7 +2,7 @@
 This is a command line tool for fetching pages from the web. 
 All the services are Dependency Injected, so you can easily extend the functionality.
 
-![image-20221113213531243](.\images\fetch.png)
+![ ](images\fetch.png)
 
 ## Usage
 ``` bash
@@ -27,15 +27,22 @@ $ ./fetch https://www.google.com https://www.facebook.com
 ```bash
 $ ./fetch --metadata https://www.google.com https://www.facebook.com
 ```
-## Build
-```bash
+## Build and Run
+- Docker
+``` bash
 docker build -t fetch .
 docker run --rm -it fetch [Options] <Urls...>
 ```
+- vs studio 2022
+``` batch
+dotnet build
+dotnet run --project fetch [Options] <Urls...>
+```
+
 
 ## Todo
 - [ ] Add output options to save the fetched pages to a file.
-- [ ] Download the pages in parallel.
+- [ ] <del>Download the pages in parallel.</del>
 - [ ] Download all the pages assets (images, css, js, etc).
 - [ ] Beautify the console output.
 - [ ] Seperate the services and the interfaces each in a different project.

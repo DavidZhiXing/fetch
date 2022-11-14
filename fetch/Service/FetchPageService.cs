@@ -18,7 +18,10 @@ public class FetchPageService
 
     public async Task FetchAndSaveAsync(IEnumerable<string> urls, bool printMetadata = false)
     {
-        foreach (var url in urls)
+        var tasks = urls.Select(url => FetchAndSaveAsync(url, printMetadata));
+        await Task.WhenAll(tasks);
+
+        async Task FetchAndSaveAsync(string url, bool printMetadata = false)
         {
             try
             {
