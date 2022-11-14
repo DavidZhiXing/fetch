@@ -20,7 +20,7 @@ public class ConsoleService : BackgroundService
 
     private async Task ParseCommandLineArgumentsAndRun()
     {
-        await Parser.Default.ParseArguments<CommandLineOption>(Environment.GetCommandLineArgs())
+        await Parser.Default.ParseArguments<CommandLineOption>(Environment.GetCommandLineArgs().Skip(1))
                             .WithParsedAsync(RunAsync);
     }
 
@@ -28,7 +28,7 @@ public class ConsoleService : BackgroundService
     {
         try
         {
-            await _fetchPageService.FetchAndSaveAsync(options.Urls, options.Metadata);
+            await _fetchPageService.FetchAndSaveAsync(options.Output, options.Urls, options.Metadata);
         }
         catch (Exception ex)
         {

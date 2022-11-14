@@ -2,7 +2,7 @@
 This is a command line tool for fetching pages from the web. 
 All the services are Dependency Injected, so you can easily extend the functionality.
 
-![ ](images\fetch.png)
+![ ](images/fetch.png)
 
 ## Usage
 ``` bash
@@ -41,7 +41,7 @@ dotnet run --project fetch [Options] <Urls...>
 
 
 ## Todo
-- [ ] Add output options to save the fetched pages to a file.
+- [ ] <del>Add output options to save the fetched pages to a file.</del>
 - [ ] <del>Download the pages in parallel.</del>
 - [ ] Download all the pages assets (images, css, js, etc).
 - [ ] Beautify the console output.

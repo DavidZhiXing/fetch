@@ -14,7 +14,7 @@ builder.UseConsoleLifetime(consoleBuilder =>
 });
 var host = builder.ConfigureServices(services =>
 {
-    services.AddLogging(logginBuilder => logginBuilder.AddConsole());
+    services.AddLogging(logginBuilder => logginBuilder.AddConsole().SetMinimumLevel(LogLevel.Error));
     services.AddLocalFileRepository();
     services.AddMetadataService();
     services.AddWebpageService();

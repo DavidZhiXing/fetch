@@ -16,7 +16,7 @@ public class FetchPageService
         _logger = logger;
     }
 
-    public async Task FetchAndSaveAsync(IEnumerable<string> urls, bool printMetadata = false)
+    public async Task FetchAndSaveAsync(string? output, IEnumerable<string> urls, bool printMetadata = false)
     {
         var tasks = urls.Select(url => FetchAndSaveAsync(url, printMetadata));
         await Task.WhenAll(tasks);
@@ -34,7 +34,7 @@ public class FetchPageService
                         Console.WriteLine(metadata.ToString());
                     }
 
-                    var directory = Environment.CurrentDirectory;
+                    var directory = string.IsNullOrEmpty(output) ? Environment.CurrentDirectory : output;
                     var fileName = uri.Host + HtmlExtention;
 
                     var path = Path.Combine(directory, fileName);
